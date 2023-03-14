@@ -1,0 +1,13 @@
+migrations
+
+npx knex migrate:make "migrations_name"   --> cria uma migrations
+npx knex migrate:latest                 --> execute todas as migrations
+npx knex migrate:rollback               --> desfaz migrations para edição da migration. alerta('Apenas se a migrations ainda não subiu para producao ou para alguem da equipe')
+
+
+
+knex
+dotenv
+httpie
+sqlite3
+zod
