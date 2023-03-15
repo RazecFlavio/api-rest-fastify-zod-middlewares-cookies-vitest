@@ -42,3 +42,12 @@ Processo de buid e deploy:
     "build": "tsup src" -> script no package.json   -> vai gerar pasta padrao dist na raiz ou nomear uma pasta
     "build": "tsup src --out-dir build"             -> vai gerar pasta build com o codigo JS.
 
+
+Apos criar banco na hospedagem:
+
+    1 - criar variavel ambiente para DATABASE_CLIENT: "sqlite" | "pg"
+    2 - npm i pg
+    3 - na config da database colocar no lugar de client: "sqlite" a DATABASE_CLIENT;
+    4 - na config da database setar connection 
+    5 - verificar a versao do node suportada na hospedagem. Adicionar no package.json. em engines setar a versao do nodejs.
+    6 - Definir a porta padrao e forçar no zod a converter para numero -> pasta ./env/index.ts
