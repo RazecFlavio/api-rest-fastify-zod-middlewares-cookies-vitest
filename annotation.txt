@@ -30,3 +30,15 @@ Tipos de Testes
 
 
     Piramide de testes: E2E (não dependem de nenhuma tecnologia, não dependem de arquitetura)
+
+Processo de buid e deploy:
+
+-   ANTIGO: no tsconfig.json
+    "rootDir": "./src",    Origem do codigo     -> setar o diretorio do codigo em typescript
+     "outDir": "./build",  destino do codigo    -> setar o destino do codigo em javascript
+     executa comando: npx tsc
+
+-   NOVO: npm i tsup -D
+    "build": "tsup src" -> script no package.json   -> vai gerar pasta padrao dist na raiz ou nomear uma pasta
+    "build": "tsup src --out-dir build"             -> vai gerar pasta build com o codigo JS.
+
