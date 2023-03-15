@@ -10,4 +10,23 @@ knex
 dotenv
 httpie
 sqlite3
-zod
+
+
+zod         - validação de requisições
+cookies     - authenticações    
+middlewares - interceptadores
+jest/vitest - Testes automatizados  ->>>>npm i -D vitest supertest @types/supertest
+
+
+Tipos de Testes
+
+1 - unitarios           - unidade da sua aplicacao - pedaços isolados.
+2 - integracao          - comunicação entre duas ou mais unidades.
+3 - e2e:ponta a ponta   - Simula um usuario operando na nossa aplicacao.
+
+3 - e2e:ponta a ponta
+    :front-end: //teste na pagina de login -> abre a pagina de login, digite o texto x no campo y e clique no botao
+    :back-end: chamadas HTTP, WebSockets -> da rota até o banco de dados
+
+
+    Piramide de testes: E2E (não dependem de nenhuma tecnologia, não dependem de arquitetura)
